@@ -39,8 +39,8 @@ export default class ClassCom extends Component{
 ```
 ## Usage
 ```
-$ git clone https://github.com/CybeXTron/React-Native-Expo-Props.git
-$ cd React-Native-Expo-Props
+$ git clone https://github.com/SuryaKarmakar/React-Native-Props.git
+$ cd React-Native-Props
 $ npm install 
 $ npm run [web, android, ios]
 ```
