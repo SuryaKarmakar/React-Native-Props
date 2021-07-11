@@ -1,13 +1,18 @@
-import React, {Component} from 'react';
-import {View, StyleSheet, Text, } from 'react-native';
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
 
-export default class CustomCom extends Component{
-    render(){
-        return(
-            <View style={{flexDirection:'row'}}>
-                <Text style={{fontSize:20,margin:10}}>{this.props.name}</Text>
-                <Text style={{fontSize:20,margin:10}}>{this.props.work}</Text>
-            </View>
-        );
-    }
+const CustomCom = (props) => {
+    const {name, work} = props;
+    return (
+        <View style={{ flexDirection: 'row' }}>
+            <Text style={styles.textStyle}>{name}</Text>
+            <Text style={styles.textStyle}>{work}</Text>
+        </View>
+    );
 }
+const styles = StyleSheet.create({
+    textStyle: {
+        fontSize: 20, margin: 10
+    }
+})
+export default CustomCom;
